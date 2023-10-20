@@ -2,6 +2,13 @@ let numeripc= 5
 let arraynumeripc =[]
 let numeritotali= 100;
 let numeriel = document.getElementById('numeridelpc')
+let timeout = setInterval(addnone,5000)
+
+
+function addnone(){
+    numeriel.classList.add("d-none")
+}
+
 for(let i=0;i < numeripc;i++){
     let randomnumber = GetRandomnumber(1,numeritotali)
     arraynumeripc.push(randomnumber)
