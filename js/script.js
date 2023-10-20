@@ -37,9 +37,11 @@ btnel.addEventListener('click',function(){
 }
  if(arraynumeriuguali.length>0){
  alert(`Hai indovinato questi numeri:${arraynumeriuguali}`)
+ location.reload();
  }
  else{
     alert(`NON HAI INDOVINATO NESSUN NUMERO!!!`)
+    location.reload();
 }
 })
 
