@@ -1,11 +1,11 @@
 let numeripc= 5
 let arraynumeripc =[]
 let numeritotali= 100;
-
+let numeriel = document.getElementById('numeridelpc')
 for(let i=0;i < numeripc;i++){
     let randomnumber = GetRandomnumber(1,numeritotali)
     arraynumeripc.push(randomnumber)
-    console.log(arraynumeripc)
+    numeriel.innerHTML =`ricorda questi numeri ${arraynumeripc}`
 }
 
 function GetRandomnumber(min, max) {
