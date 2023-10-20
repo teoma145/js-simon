@@ -23,12 +23,24 @@ for(let i=0;i < numeripc;i++){
 btnel.addEventListener('click',function(){
     let inpututente = elutente.querySelectorAll('input');
     let valoriInput = [];
-    for (var i = 0; i < inpututente.length; i++) {
-    valoriInput.push(inpututente[i].value);
+    for (let i = 0; i < inpututente.length; i++) {
+    valoriInput.push(parseInt(inpututente[i].value));
     console.log(valoriInput)
 }
+ arraynumeriuguali=[]
+ 
+ for (let x=0; x<valoriInput.length;x++){
+    if(arraynumeripc.includes(valoriInput[x])){
+        arraynumeriuguali.push(valoriInput[x])
+    }
     
-
+}
+ if(arraynumeriuguali.length>0){
+ alert(`Hai indovinato questi numeri:${arraynumeriuguali}`)
+ }
+ else{
+    alert(`NON HAI INDOVINATO NESSUN NUMERO!!!`)
+}
 })
 
 
