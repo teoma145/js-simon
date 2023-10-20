@@ -3,10 +3,14 @@ let arraynumeripc =[]
 let numeritotali= 100;
 let numeriel = document.getElementById('numeridelpc')
 let timeout = setInterval(addnone,5000)
-
+let elutente = document.getElementById('numeriutente')
+let timout2 = setInterval(removenone,5500)
 
 function addnone(){
     numeriel.classList.add("d-none")
+}
+function removenone(){
+    elutente.classList.remove("d-none")
 }
 
 for(let i=0;i < numeripc;i++){
