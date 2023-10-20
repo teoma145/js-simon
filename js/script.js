@@ -22,7 +22,7 @@ for(let i=0;i < numeripc;i++){
 
 btnel.addEventListener('click',function(){
     let inpututente = elutente.querySelectorAll('input');
-    var valoriInput = [];
+    let valoriInput = [];
     for (var i = 0; i < inpututente.length; i++) {
     valoriInput.push(inpututente[i].value);
     console.log(valoriInput)
