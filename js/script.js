@@ -2,9 +2,9 @@ let numeripc= 5
 let arraynumeripc =[]
 let numeritotali= 100;
 let numeriel = document.getElementById('numeridelpc')
-let timeout = setInterval(addnone,5000)
+let timeout = setTimeout(addnone,5000)
 let elutente = document.getElementById('numeriutente')
-let timeout2 = setInterval(removenone,5500)
+let timeout2 = setTimeout(removenone,5500)
 let btnel = document.getElementById('btnsend')
 
 function addnone(){
